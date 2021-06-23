@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<test>
+	<loglevel>off</loglevel>
+	<pages all="false">1,2,3,4</pages>
+	<pdfpath></pdfpath>
+	<matchlevel>strict</matchlevel>
+	<apikey></apikey>
+	<appname></appname>
+	<batchname></batchname>
+	<type>checkbycontent</type>
+	<content>
+		<assert>
+			<expect>Region level assert on a given page</expect>
+			<region>72,120,243,25</region>
+			<onpages>1</onpages>
+		</assert>
+		<assert>
+			<expect>Region level assert for selected or all pages</expect>
+			<region>72,150,243,25</region>
+			<onpages all="false">1,2</onpages>
+		</assert>
+		<assert>
+			<expect>Page level assert</expect>
+			<onpages>2</onpages>
+		</assert>			
+	</content>
+</test>

@@ -1,8 +1,7 @@
 {
-  "name": "api-testing-protractor-typescript",
+  "name": "api_test",
   "version": "1.0.0",
-  "description": "This API Test Automation framework is designed using Request node module, Protractor, Jasmine and TypeScript",
-  "homepage": "https://github.com/qaloop/api-testing-protractor-typescript",
+  "description": "Automated API tests using Request node module, Protractor, Jasmine and TypeScript",
   "main": "conf.js",
   "dependencies": {
     "jasmine": "^3.7.0",
@@ -10,13 +9,19 @@
     "protractor-beautiful-reporter": "^1.3.6",
     "request": "^2.88.2",
     "rimraf": "^2.7.1",
-    "typescript": "^3.9.9"
+    "typescript": "^3.9.9",
+    "webdriver-manager": "^12.1.8"
   },
   "devDependencies": {
+    "@angular/compiler": "^2.3.1",
+    "@angular/core": "^2.3.1",
     "@types/jasmine": "^3.6.9",
+    "@types/node": "^14.14.37",
     "codelyzer": "^4.5.0",
+    "rxjs": "^5.0.0-rc.4",
     "tslint": "^5.20.1",
-    "yargs-parser": ">=13.1.2"
+    "yargs-parser": ">=13.1.2",
+    "zone.js": "^0.7.8"
   },
   "scripts": {
     "tsc": "tsc",
@@ -25,21 +30,5 @@
     "test": "protractor temp/conf.js",
     "webdriver-update": "node node_modules/protractor/bin/webdriver-manager update"
   },
-  "keywords": [
-    "request",
-    "protractor",
-    "typescript",
-    "javascript",
-    "angular",
-    "angularjs",
-    "vscode",
-    "testing",
-    "api testing"
-  ],
-  "author": "QA Loop",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qaloop/api-testing-protractor-typescript.git"
-  }
+  "author": "William Le"
 }
